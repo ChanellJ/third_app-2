@@ -28,13 +28,13 @@ describe "StaticPages" do
   it "should have correct links" do 
     visit root_path
     click_link "About"
-    page.should have_selector "title", text: "About Us"
+    page.should have_selector 'title', text: 'About Us'
     click_link "Help" 
-    page.should have_selector "title", text: "Help"
+    page.should have_selector 'title', text: 'Help'
     click_link "Contact"
-    page.should have_selector "title", text: "Contact"
+    page.should have_selector 'title', text: 'Contact'
     click_link "Home"
     click_link "Sign up now!"
-    page.should have_selector "title", text: "Sign up"
+    page.should have_selector 'title', text: 'Sign up'
   end
 end
